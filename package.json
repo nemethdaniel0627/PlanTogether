@@ -1,0 +1,16 @@
+{
+    "name": "plantogether",
+    "version": "1.0.0",
+    "description": "A web application with Node.js backend and React.js frontend",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd backend && npm run dev",
+        "client": "cd frontend && npm start",
+        "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
