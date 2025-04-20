@@ -20,7 +20,7 @@ const Login = () => {
         <h2>Bejelentkezés</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Felhasználónév:</label>
+            <label htmlFor="username">Felhasználónév: </label>
             <input
               type="text"
               id="username"
