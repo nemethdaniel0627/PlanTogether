@@ -1,0 +1,164 @@
+.profile-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--beige-light);
+  min-height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: var(--navy);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: var(--navy-light);
+}
+
+.profile-header h1 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 28px;
+}
+
+.profile-content {
+  display: grid;
+  gap: 30px;
+}
+
+section {
+  background-color: var(--beige);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: var(--navy);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+
+.info-item label {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.info-item span {
+  color: var(--navy);
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background-color: var(--beige-light);
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+.role-badge {
+  background-color: var(--navy);
+  color: var(--text-light);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.events-list {
+  display: grid;
+  gap: 15px;
+}
+
+.event-card {
+  background-color: var(--beige-light);
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.event-header h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 16px;
+}
+
+.team-tag {
+  background-color: var(--navy);
+  color: var(--text-light);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.event-details {
+  display: flex;
+  gap: 15px;
+  color: var(--navy);
+  font-size: 14px;
+}
+
+.event-date, .event-time {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+} 
